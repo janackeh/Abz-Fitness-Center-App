@@ -79,15 +79,12 @@ mealRouter.get('/:mealId/edit', (req,res) => {
 })
 
 
-// mealRouter.get('/:mealId',(req, res) => {
-//   mealApi.getMeal(req.params.mealId)
-//   .then((meal) => {
-//     foodApi.getFoodByShopId(shop._id)
-//       .then((food) => {
-//         res.render('shops/singleShop', {shop, food})
-//       }) 
-//   })
-// })
+mealRouter.get('/:mealId',(req,res) => {
+  mealApi.getMeal(req.params.mealId)
+  .then((meal) => {
+      res.render('meals/meal' ,{meal})
+  })
+})
 
 mealRouter.put('/:mealId', (req,res) => {
   mealApi.updateMeal(req.params.mealId, req.body)

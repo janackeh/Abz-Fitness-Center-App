@@ -1,9 +1,14 @@
 <a href="/meals">Back to all meals</a>
-
-<h2>{{meal.name}}</h2>
-
+<div>
+<h3>{{meal.description}}</h3>
+<p>{{meal.createdAt}}</p>
+<p>{{meal.img-link}}</p>
+</div>
+<div>
 <a href="/meals/{{meal._id}}/edit">Edit Meal</a>
-
+</div>
+<div>
 <form action="/meals/{{meal._id}}?_method=DELETE" method="POST">
     <input type="submit" value="Delete Meal">
 </form>
+</div>

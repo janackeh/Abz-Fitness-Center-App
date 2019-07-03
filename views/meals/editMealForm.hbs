@@ -1,0 +1,41 @@
+<form method="POST" action="/meals/{{meal._id}}?_method=PUT">
+
+
+<select name="mealtype" form="mealtype">
+  <option value="breakfast">Breakfast</option>
+  <option value="lunch">Lunch</option>
+  <option value="dinner">Dinner</option>
+  <option value="snack">Snack</option>
+</select>
+
+
+<label for="createdAt"> Created At  :  </label>
+  <input 
+   type="date" 
+   default="date.now"
+   placeholder="date" 
+   name="createdAt" 
+   id="createdAt"
+   />
+
+
+<label for="description"> Description  : </label>
+      <textarea
+      name="description"
+      id="description"
+      placeholder="description"
+      cols="30"
+      rows="10"
+      ></textarea>
+
+<label for="img-link">Image Link  :  </label>
+      <input type="text" 
+      name="imgLink"
+      placeholder="image link" 
+      id="img-link"/>
+
+
+
+
+  <input type="submit" value="Update Meal"/>
+</form>
