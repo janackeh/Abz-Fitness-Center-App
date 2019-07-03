@@ -17,7 +17,7 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
-const { abzRouter } = require('./controllers/meal.js')
+const { mealRouter } = require('./controllers/meal.js')
 
 
 /* Step 3
@@ -61,9 +61,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
-app.get('/', (req, res) => {
-    res.redirect('/meals')
-app.use('/meal', mealRouter)
+app.use('/meals', mealRouter)
 
 /* Step 5
  *
@@ -80,4 +78,4 @@ const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log(`App is listening on PORT ${PORT}`)
 })
-})
+

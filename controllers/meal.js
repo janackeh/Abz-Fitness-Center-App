@@ -39,7 +39,7 @@ const mealRouter = express.Router()
  * TODO: delete this handler; it's just a sample
  */ 
 mealRouter.get('/', (req, res) => {
-  mealApi.getMeals()
+  mealApi.getAllMeals()
   .then((meals) => {
     res.render('meals/meals', {meals})
   }) 
@@ -49,7 +49,7 @@ mealRouter.get('/', (req, res) => {
 })
 
 mealRouter.post('/',(req, res) => {
-  mealApi.addMeal(req.body)
+  mealApi.addNewMeal(req.body)
   .then(() => {
   res.redirect('/meals')
 })

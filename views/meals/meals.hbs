@@ -1,0 +1,13 @@
+<h2>Meal Tracker</h2>
+
+<a href="/meals/new">Add New Meal</a>
+ 
+{{#each meals}}
+    <div>
+        <a href="/meals/{{_id}}">{{_id}}</a>
+         <p>{{createdAt}}</p>
+        <p>{{description}}</p>
+        <p>{{imgLink}}</p>
+    </div>
+    
+{{/each}}

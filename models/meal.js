@@ -25,7 +25,7 @@ const mongoose = require('./connection.js')
 //  * TODO: create model schema 
 //  * NOTE: skip this if you are not using mongoose
 //  *
- const MealSchema = new mongoose.Schema ({
+const MealSchema = new mongoose.Schema ({
   createdAt: {
         type: Date,
         default: Date.now
@@ -37,7 +37,7 @@ const mongoose = require('./connection.js')
     }, 
 
     imgLink: String,
-   })
+})
 
 /* Step 3
  *
@@ -83,5 +83,9 @@ function deleteMeal (mealId) {
  * object
  */
 module.exports = {
-  getMeal
+  getMeal,
+  getAllMeals,
+  addNewMeal,
+  updateMeal,
+  deleteMeal
 }

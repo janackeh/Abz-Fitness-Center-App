@@ -1,0 +1,33 @@
+<form method="POST" action="/meals">
+
+<label for="createdAt"> Created At  :  </label>
+  <input 
+   type="date" 
+   default="date.now"
+   placeholder="date" 
+   name="createdAt" 
+   id="createdAt"
+   />
+
+
+<label for="description"> Description  : </label>
+      <textarea
+      name="description"
+      id="description"
+      placeholder="description"
+      cols="30"
+      rows="10"
+      ></textarea>
+
+<label for="imgLink"> Image : </label>
+<input 
+    type="text"
+    name="image"
+    id="image" 
+    placeholder="image link"
+    />
+
+
+
+  <input type="submit" value="Create New Issue"/>
+</form>
