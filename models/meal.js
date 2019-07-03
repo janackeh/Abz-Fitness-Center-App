@@ -26,6 +26,7 @@ const mongoose = require('./connection.js')
 //  * NOTE: skip this if you are not using mongoose
 //  *
 const MealSchema = new mongoose.Schema ({
+
   createdAt: {
         type: Date,
         default: Date.now

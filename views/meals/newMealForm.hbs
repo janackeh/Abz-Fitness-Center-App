@@ -1,5 +1,14 @@
 <form method="POST" action="/meals">
 
+
+<select name="mealtype" form="mealtype">
+  <option value="breakfast">Breakfast</option>
+  <option value="lunch">Lunch</option>
+  <option value="dinner">Dinner</option>
+  <option value="snack">Snack</option>
+</select>
+
+
 <label for="createdAt"> Created At  :  </label>
   <input 
    type="date" 
@@ -19,15 +28,14 @@
       rows="10"
       ></textarea>
 
-<label for="imgLink"> Image : </label>
-<input 
-    type="text"
-    name="image"
-    id="image" 
-    placeholder="image link"
-    />
+<label for="img-link">Image Link  :  </label>
+      <input type="text" 
+      name="imgLink"
+      placeholder="image link" 
+      id="img-link"/>
 
 
 
-  <input type="submit" value="Create New Issue"/>
+
+  <input type="submit" value="Create New Meal"/>
 </form>

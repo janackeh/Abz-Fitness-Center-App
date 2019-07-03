@@ -1,16 +1,8 @@
-{{!-- <form method="POST" action="/issues/{{issue._id}}?_method=DELETE">
-  <input type="submit" value="Delete Issue"/>
-</form> --}}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 <a href="/meals">Back to all meals</a>
 
-<h2>{{meal._id}}</h2>
+<h2>{{meal.name}}</h2>
 
-{{!-- <form action="/issues/{{issue._id}}?_method=PUT" method="POST">
-    <input type="submit" value="Edit Issue">
-</form> --}}
-
-<a href="/meals/{{meal._id}}/edit">Edit Meal</a> 
+<a href="/meals/{{meal._id}}/edit">Edit Meal</a>
 
 <form action="/meals/{{meal._id}}?_method=DELETE" method="POST">
     <input type="submit" value="Delete Meal">
