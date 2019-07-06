@@ -1,0 +1,31 @@
+<form method="POST" action="/weightlosses">
+
+<label for="createdAt"> Created At  :  </label>
+  <input 
+   type="date" 
+   default="date.now"
+   placeholder="date" 
+   name="createdAt" 
+   id="createdAt"
+   />
+ <label for="currentWeight"> Current Weight  :  </label>
+  <input 
+    type="number"
+    name="currentWeight"
+    id="currentWeight" 
+    min="100"
+    max="400"
+    />
+
+
+<label for="notes"> Notes  : </label>
+      <textarea
+      name="notes"
+      id="notes"
+      placeholder="notes"
+      cols="30"
+      rows="10"
+      ></textarea>
+
+  <input type="submit" value="Create New Weight Entry"/>
+</form>

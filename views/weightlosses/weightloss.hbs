@@ -1,0 +1,13 @@
+<a href="/weightlosses">Back to all weight loss entries</a>
+<div>
+<h3>{{weightloss.notes}}</h3>
+<p>{{weightloss.createdAt}}</p>
+</div>
+<div>
+<a href="/weightlosses/{{weightloss._id}}/edit">Edit Weight Loss</a>
+</div>
+<div>
+<form action="/weightlosses/{{weightloss._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Weight Loss">
+</form>
+</div>
