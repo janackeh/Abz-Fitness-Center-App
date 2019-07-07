@@ -66,8 +66,8 @@ function addNewWeightLoss (newWeightLoss) {
 
 }
 
-function updateWeightLoss (weightLossId, updateWeightLoss) {
-    return WeightLossCollection.findByIdAndUpdate(weightLossId)
+function updateWeightLoss (weightLossId, newWeightLoss) {
+    return WeightLossCollection.findByIdAndUpdate(weightLossId, newWeightLoss)
 
 }
 

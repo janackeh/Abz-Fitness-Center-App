@@ -68,8 +68,8 @@ function addNewMeal (newMeal) {
 
 }
 
-function updateMeal (mealId, updateMeal) {
-    return MealCollection.findByIdAndUpdate(mealId)
+function updateMeal (mealId, newMeal) {
+    return MealCollection.findByIdAndUpdate(mealId, newMeal)
 
 }
 

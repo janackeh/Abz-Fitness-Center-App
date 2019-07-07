@@ -27,7 +27,7 @@ const workoutApi = require('../models/workout.js')
  * TODO: rename this from templateRouter to something that makes sense. (e.g:
  * `shopRouter`)
  */
-const workoutRouter = express.Router()
+const workoutRouter = express.Router({mergeParams:true})
 
 /* Step 4
  * 

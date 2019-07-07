@@ -90,7 +90,7 @@ weightLossRouter.get('/:weightLossId',(req,res) => {
 weightLossRouter.put('/:weightLossId', (req,res) => {
   weightLossApi.updateWeightLoss(req.params.weightLossId, req.body)
   .then(() => {
-    res.redirect('/weightLosses')
+    res.redirect('/weightlosses')
   })
   .catch((err) => {
     res.send(err)

@@ -32,7 +32,7 @@ const WorkoutSchema = new mongoose.Schema ({
         default: Date.now
     },
     
-    description: {
+    notes: {
         type: String,
         required: true
     }, 
@@ -67,8 +67,8 @@ function addNewWorkout (newWorkout) {
 
 }
 
-function updateWorkout (workoutId, updateWorkout) {
-    return WorkoutCollection.findByIdAndUpdate(workoutId)
+function updateWorkout (workoutId, newWorkout) {
+    return WorkoutCollection.findByIdAndUpdate(workoutId, newWorkout)
 
 }
 
