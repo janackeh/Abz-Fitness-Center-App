@@ -1,0 +1,16 @@
+
+{{!-- <form action="/issues/{{issue._id}}?_method=PUT" method="POST">
+    <input type="submit" value="Edit Issue">
+</form> --}}
+
+<h2> Workout Tracker </h2>
+<a href="/workouts/new">Add New Workout</a>
+{{#each  workouts}}
+    <div>
+        <a href="/workouts/{{_id}}">{{notes}}</a>
+        <p>{{date}}</p>
+        <p>{{currentWorkouts}}</p>
+        <p>{{notes}}</p>
+    </div>
+    
+{{/each}}

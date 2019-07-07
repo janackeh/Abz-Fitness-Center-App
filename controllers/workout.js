@@ -67,7 +67,7 @@ workoutRouter.post('/',(req, res) => {
 // })
 
 workoutRouter.get('/new', (req,res) => {
-  res.render('meals/newWorkoutForm')
+  res.render('workouts/newWorkoutForm')
 })
 
 workoutRouter.get('/:workoutId/edit', (req,res) => {

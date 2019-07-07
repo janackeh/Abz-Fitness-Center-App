@@ -1,0 +1,13 @@
+<a href="/workouts">Back to all workout entries</a>
+<div>
+<h3>{{workout.notes}}</h3>
+<p>{{workout.createdAt}}</p>
+</div>
+<div>
+<a href="/workouts/{{workout._id}}/edit">Edit Workout</a>
+</div>
+<div>
+<form action="/workouts/{{workout._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Workout">
+</form>
+</div>

@@ -17,9 +17,9 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
-const { mealRouter } = require('./controllers/meal.js')
+const { mealRouter } = require('./controllers/meal')
 const { weightLossRouter } = require('./controllers/weightloss')
-
+const { workoutRouter } = require('./controllers/workout')
 
 /* Step 3
  *
@@ -64,6 +64,7 @@ app.set('view engine', 'hbs')
  */
 // app.use('/meals', mealRouter)
 app.use('/weightlosses', weightLossRouter)
+app.use('/workouts', workoutRouter)
 
 /* Step 5
  *

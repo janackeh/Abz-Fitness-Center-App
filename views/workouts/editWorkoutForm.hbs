@@ -1,0 +1,30 @@
+<form method="POST" action="/workouts/{{workout._id}}?_method=PUT">
+
+
+<select name="workouttype" form="workouttype">
+  <option value="cardio">Cardio</option>
+  <option value="strength">Strength</option>
+</select>
+
+
+<label for="createdAt"> Created At  :  </label>
+  <input 
+   type="date" 
+   default="date.now"
+   placeholder="date" 
+   name="createdAt" 
+   id="createdAt"
+   />
+
+
+<label for="notes"> Notes  : </label>
+      <textarea
+      name="notes"
+      id="notes"
+      placeholder="notes"
+      cols="30"
+      rows="10"
+      ></textarea>
+
+  <input type="submit" value="Update Workout"/>
+</form>
