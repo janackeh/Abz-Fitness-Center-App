@@ -9,7 +9,7 @@
  * NOTE: skip this if you are not using mongoose
  *
  */
-const mongoose = require('./connection.js')
+// import { Schema, model } from './connection.js';
 
 /* Step 1 alternative
  *
@@ -18,7 +18,7 @@ const mongoose = require('./connection.js')
  * your data once you stop running your server.
  *
  */
-
+const mongoose = require('/connection.js')
 
 /* Step 2
  *
@@ -26,9 +26,9 @@ const mongoose = require('./connection.js')
  * NOTE: skip this if you are not using mongoose
  *
  */
-const AbzSchema = new mongoose.Schema({
- imgLink: String
-})
+const AbzSchema = new Schema({
+ 
+ })
 
 /* Step 3
  *
@@ -36,22 +36,23 @@ const AbzSchema = new mongoose.Schema({
  * NOTE: skip this if you are not using mongoose
  *
  */
-const AbzCollection = mongoose.model('Abz', AbzSchema)
+const AbzCollection = mongoose.model('abz', AbzSchema)
 
 /* Step 4
  *
  * TODO: delete this it's just a sample
  *
  */
-// function getHelloWorldString() {
-//   return 'hello world'
-// }
+function getAllAbz() {
+  return AbzCollection.find()
+ }
 
 // /* Step 5
 //  *
 //  * TODO: export all functions from this file by adding their names as keys to this
 //  * object
 //  */
-// module.exports = {
-//   getHelloWorldString
-// }
+module.exports = {
+  getAllAbz,
+  }
+}
