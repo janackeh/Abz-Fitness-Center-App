@@ -53,6 +53,5 @@ function getAllAbz() {
 //  * object
 //  */
 module.exports = {
-  getAllAbz,
+  getAllAbz
   }
-}

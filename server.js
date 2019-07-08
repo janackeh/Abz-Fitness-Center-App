@@ -17,6 +17,7 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
+const { abzRouter} = require('./controllers/abz')
 const { mealRouter } = require('./controllers/meal')
 const { weightLossRouter } = require('./controllers/weightloss')
 const { workoutRouter } = require('./controllers/workout')
@@ -64,7 +65,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
-// app.use('/abz', abzRouter)
+ app.use('/abz', abzRouter)
 app.use('/meals', mealRouter)
 app.use('/weightlosses', weightLossRouter)
 app.use('/workouts', workoutRouter)

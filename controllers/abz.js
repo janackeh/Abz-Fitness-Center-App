@@ -39,14 +39,10 @@ const abzRouter = express.Router()
 //  * TODO: delete this handler; it's just a sample
 //  */ 
 abzRouter.get('/', (req, res) => {
-  abzApi.getAllAbz()
-  .then((meals) => {
-    res.render('abz/abz', {abz})
+  
+    res.render('abz/abz')
   }) 
-.catch((err) => {
-  res.send(err)
-})
-})
+
 
 // mealRouter.post('/',(req, res) => {
 //   mealApi.addNewMeal(req.body)
