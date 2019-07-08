@@ -3,3 +3,8 @@
 
 Welcome to my 2nd project! In this project, I wanted to create a companion app to my gym's new website. The objective of this app is to be able to track your daily meals, weight loss and workouts in one simple application.  
 
+## Links :
+
+* Trello project board : [trello](https://trello.com/b/z586wQwV/janackeh-project-2) 
+* Heroku : [heroku]
+(https://abz-fitness-app.herokuapp.com/)
