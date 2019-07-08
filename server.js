@@ -51,7 +51,7 @@ app.use(methodOverride('_method'))
  */
 app.use(express.static(__dirname+"/public"))
 app.get('/', (req, res) => {
-    res.redirect('/meals')
+    res.redirect('/abz')
   })
 /* Step 3.b
  *
@@ -70,9 +70,7 @@ app.use('/meals', mealRouter)
 app.use('/weightlosses', weightLossRouter)
 app.use('/workouts', workoutRouter)
 
-app.get('/', (req, res) => {
-    res.redirect('/abz')
-})
+
 /* Step 5
  *
  * Set the port the server is to run on
