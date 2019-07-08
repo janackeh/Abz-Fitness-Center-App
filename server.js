@@ -70,6 +70,9 @@ app.use('/meals', mealRouter)
 app.use('/weightlosses', weightLossRouter)
 app.use('/workouts', workoutRouter)
 
+app.get('/', (req, res) => {
+    res.redirect('/abz')
+})
 /* Step 5
  *
  * Set the port the server is to run on
