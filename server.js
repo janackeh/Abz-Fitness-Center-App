@@ -49,7 +49,9 @@ app.use(methodOverride('_method'))
  * image files 
  */
 app.use(express.static(__dirname+"/public"))
-
+app.get('/', (req, res) => {
+    res.redirect('/meals')
+  })
 /* Step 3.b
  *
  * set the view engine of express to use the hbs (handlebars) package 
@@ -81,5 +83,9 @@ const PORT = process.env.PORT || 3000
  */
 app.listen(PORT, () => {
     console.log(`App is listening on PORT ${PORT}`)
+
 })
+// app.listen( app.get( 'port' ), function() {
+//     console.log( 'Node server is running on port ' + app.get( 'port' ));
+//     });
 
