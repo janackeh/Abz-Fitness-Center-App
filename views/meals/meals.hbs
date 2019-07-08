@@ -2,9 +2,16 @@
 {{!-- <form action="/issues/{{issue._id}}?_method=PUT" method="POST">
     <input type="submit" value="Edit Issue">
 </form> --}}
-
+<div>
 <h2> Meal Tracker </h2>
-<a href="/meals/new">Add New Meal</a>
+</div>
+<div>
+    <a href="/weightlosess">Weight Loss Tracker</a>
+</div>
+<div>
+    <a href="/workouts/">Workout Tracker</a>
+</div>
+<a href="/meals/new"> :: Add New Meal :: </a>
 {{#each  meals}}
     <div>
         <a href="/meals/{{_id}}">{{description}}</a>
