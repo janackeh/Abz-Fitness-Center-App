@@ -28,3 +28,7 @@ Front End :
 * CSS
 * Bootstrap
 * Handlebars
+
+## Future Development :
+* add more styling to the tracker pages
+* add a login 
