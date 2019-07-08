@@ -2,10 +2,19 @@ body {
     background-color:gray;
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    
+    
     
 }
+
+
 
 a { color:#E2DCDC !important; }
 a:hover, a:visited { color:#EA1212 !important; }
 /* a { color:#d99a30 !important; }
 a:hover, a:visited { color:#37404e !important; } */
+
+.abz {
+  
+}

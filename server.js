@@ -65,7 +65,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
- app.use('/abz', abzRouter)
+app.use('/abz', abzRouter)
 app.use('/meals', mealRouter)
 app.use('/weightlosses', weightLossRouter)
 app.use('/workouts', workoutRouter)
