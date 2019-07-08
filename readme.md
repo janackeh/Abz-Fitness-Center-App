@@ -8,3 +8,8 @@ Welcome to my 2nd project! In this project, I wanted to create a companion app t
 * Trello project board : [trello](https://trello.com/b/z586wQwV/janackeh-project-2) 
 * Heroku : [heroku]
 (https://abz-fitness-app.herokuapp.com/)
+
+## Wireframes :
+![ABZ](https://user-images.githubusercontent.com/50855671/60828688-0ba92b80-a181-11e9-8488-f69fe8ad78c6.png)
+
+![ABZ](https://user-images.githubusercontent.com/50855671/60828816-722e4980-a181-11e9-9c4b-ca815d5cf9bc.png)
