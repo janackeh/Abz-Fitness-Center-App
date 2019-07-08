@@ -13,3 +13,18 @@ Welcome to my 2nd project! In this project, I wanted to create a companion app t
 ![ABZ](https://user-images.githubusercontent.com/50855671/60828688-0ba92b80-a181-11e9-8488-f69fe8ad78c6.png)
 
 ![ABZ](https://user-images.githubusercontent.com/50855671/60828816-722e4980-a181-11e9-9c4b-ca815d5cf9bc.png)
+
+## ERD : 
+![ABZ](https://user-images.githubusercontent.com/50855671/60829112-2def7900-a182-11e9-9a3b-7bb4246fc7ce.png)
+
+## Technologies Used :
+Back End : 
+* Express
+* Node.js
+* MongoDB
+* Mongoose
+
+Front End :
+* CSS
+* Bootstrap
+* Handlebars
