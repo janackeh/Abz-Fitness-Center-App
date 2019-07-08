@@ -3,19 +3,25 @@
     <input type="submit" value="Edit Issue">
 </form> --}}
 <div>
+    <br>
 <h2> Workout Tracker </h2>
 </div>
 <div>
+    <br>
     <a href="/meals/">Meal Tracker</a>
+    <a href="/meals" class="btn btn-primary btn-lg" role="button">Meal Tracker</a>
 </div>
 <div>
+    <br>
     <a href="/weightlosses/">Weight Loss Tacker</a>
 </div>
 <div>
+    <br>
     <a href="/workouts/new">:: Add New Workout ::</a>
 </div>
 {{#each  workouts}}
     <div>
+        <br>
         <a href="/workouts/{{_id}}">{{notes}}</a>
         <p>{{date}}</p>
         <p>{{notes}}</p>
