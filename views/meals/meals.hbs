@@ -3,20 +3,26 @@
     <input type="submit" value="Edit Issue">
 </form> --}}
 <div>
+    <br>
 <h2> Meal Tracker </h2>
+<br>
 </div>
 <div>
+    <br>
     {{!-- <a href="/weightlosses">Weight Loss Tracker</a> --}}
      <a href="/weightlosses" class="btn btn-primary btn-lg" role="button">Weight Loss Tracker</a>
 </div>
 <div>
+    <br>
     {{!-- <a href="/workouts/">Workout Tracker</a> --}}
     <a href="/workouts" class="btn btn-primary btn-lg" role="button">Workout Tracker</a>
 </div>
+<br>
 {{!-- <a href="/meals/new"> :: Add New Meal :: </a> --}}
 <a href="/meals/new" class="btn btn-primary btn-lg" role="button">:: Add New Meal :: </a>
 {{#each  meals}}
     <div>
+        <br>
         <a href="/meals/{{_id}}">{{description}}</a>
         <p>{{date}}</p>
         <p>{{description}}</p>

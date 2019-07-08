@@ -2,18 +2,24 @@
 {{!-- <form action="/issues/{{issue._id}}?_method=PUT" method="POST">
     <input type="submit" value="Edit Issue">
 </form> --}}
+<br>
 <div>
 <h2> Weight Loss Tracker </h2>
 </div>
 <div>
-    <a href="/meals">Meal Tracker</a>
+    <br>
+    {{!-- <a href="/meals">Meal Tracker</a> --}}
+    <a href="/meals" class="btn btn-primary btn-lg" role="button">Meal Tracker</a>
 </div>
 <div>
-    <a href="/workouts/">Workout Tracker</a>
+    <br>
+    {{!-- <a href="/workouts/">Workout Tracker</a> --}}
+    <a href="/workouts" class="btn btn-primary btn-lg" role="button">Workout Tracker</a>
 </div>
 <a href="/weightlosses/new"> :: Add New Weight :: </a>
 {{#each  weightlosses}}
     <div>
+        <br>
         <a href="/weightlosses/{{_id}}">{{notes}}</a>
         <p>{{date}}</p>
         <p>{{currentWeight}}</p>
